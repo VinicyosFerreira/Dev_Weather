@@ -1,0 +1,27 @@
+.searchBar {
+    margin: 30px auto;
+    max-width: 320px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    align-items: center;
+    gap: 15px;
+    background-color: #255a8c;
+}
+
+.searchBar input {
+    width: 250px;
+    outline: none;
+    font-size: 16.5px;
+    border: none;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #ddd;
+}
+
+.searchBar i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}

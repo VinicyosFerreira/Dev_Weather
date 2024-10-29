@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #255a8c;
+    align-items: center;
+}
+
+.header .title {
+    width: 280px;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header .icons  {
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.header i:nth-child(1) {
+    position: absolute;
+    color: #e8ac07;
+}
+
+.header i:nth-child(2) {
+    position: absolute;
+    color: #fff;
+    bottom: 2px;
+    left: 5px;
+}
+
+.header nav {
+    background-color: #444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.header nav a {
+   padding: 10px;
+}
