@@ -1,15 +1,17 @@
 import './App.css'
+import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
-import SearchBar from './components/SearchBar'
-import Weather from './components/Weather'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <>
-        <Header></Header>
-        <SearchBar></SearchBar>
-        <Weather></Weather>
+      <Header/>
+       <main>
+        <Outlet/>
+       </main>
+      <Footer/>
     </>
   )
 }

@@ -9,10 +9,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   position: relative;
+   min-height: 100vh;
 }
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-image: url("./assets/img/background.jpeg");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ccc; 
+}
+
+i {
+  font-size: 2rem;
+}
+

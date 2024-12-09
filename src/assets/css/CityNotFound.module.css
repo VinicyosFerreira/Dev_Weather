@@ -1,19 +1,16 @@
 .cityNotFound {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #255a8c;
+    background-color: rgba(0, 0, 0, 0.4);
     min-height: 200px;
     padding: 20px;
     border-radius: 8px;
-    transform: translate(-50% , -50%);
 }
 
 .cityNotFound h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 900;
 }
 

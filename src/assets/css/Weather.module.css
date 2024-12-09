@@ -1,5 +1,5 @@
 .weatherData {
-    max-width: 500px;
+    width: 100%;
     margin:  0px auto;
     display: flex;
     flex-direction:column ;
@@ -7,12 +7,13 @@
     align-items: center;
     font-size: 1.25rem;
     border-radius: 10px;
-    background-color: #255a8c;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 .weatherData h2 {
+    font-weight: 900;
     margin-top: 20px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .weatherDescription {
@@ -22,7 +23,7 @@
 }
 
 .weatherDescription img {
-    width: 120px;
+    width: 150px;
     margin-right: 10px;
 }
 
@@ -36,7 +37,7 @@ i {
 
 .weatherDescription i {
     margin-right: 10px;
-    color:rgb(198, 40, 53)
+    color:rgba(198, 40, 53 , 0.8)
 }
 
 .weatherDescription p {
@@ -67,3 +68,10 @@ i {
     text-transform: uppercase;
 }
 
+
+
+@media screen and (max-width: 576px) {
+    .weatherData {
+        width: 90%;
+    }
+}

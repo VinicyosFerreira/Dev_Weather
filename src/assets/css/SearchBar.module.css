@@ -3,11 +3,12 @@
     max-width: 320px;
     min-height: 80px;
     display: flex;
-    justify-content: center;
     border-radius: 8px;
     align-items: center;
+    justify-content: center;
     gap: 15px;
-    background-color: #255a8c;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .searchBar input {
@@ -16,12 +17,21 @@
     font-size: 16.5px;
     border: none;
     height: 50px;
-    text-align: center;
     background-color: transparent;
-    color: #ddd;
+    text-align: center;
+}
+
+.searchBar input::placeholder {
+    color:#ddd;
 }
 
 .searchBar i {
     cursor: pointer;
     font-size: 1.5rem;
 }
+
+.searchBar button {
+    background-color: transparent;
+    border: none;
+}
+

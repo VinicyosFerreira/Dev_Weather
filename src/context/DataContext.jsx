@@ -5,16 +5,16 @@ export const DataContext = createContext();
 export const DataContextProvider = ({children}) => {
 
     const [triggerFetch, setTriggerFetch] = useState(false);
-    const [data , setData] = useState(null);
+    const [weatherData , setWeatherData] = useState(null);
 
-    function fetchData(url) {
+    function fetchWeatherData(url) {
         useEffect (() => {
             if(triggerFetch) {
                 (async() => {
                     try{
                        const response = await fetch(url);
                        const result = await response.json();
-                       setData(result);
+                       setWeatherData(result)
                     }   
                     catch(error) {
                         console.log(error)
@@ -24,11 +24,18 @@ export const DataContextProvider = ({children}) => {
                     }
                 })()
             }   
-         } ,[url , triggerFetch])    
+         } ,[triggerFetch])    
     }
-   
+
     return(
-        <DataContext.Provider value={{data , fetchData , setTriggerFetch , triggerFetch}}>
+        <DataContext.Provider value={
+            {weatherData , 
+            fetchWeatherData , 
+            setTriggerFetch , 
+            triggerFetch , 
+            }
+        }
+        >
                 {children}
         </DataContext.Provider>
     )

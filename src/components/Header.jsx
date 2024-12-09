@@ -2,6 +2,7 @@ import styles from '../assets/css/Header.module.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faSun} from '@fortawesome/free-solid-svg-icons'
 import {faCloud} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
  
 function Header() {
 
@@ -20,8 +21,8 @@ function Header() {
         </section>
        
         <nav>
-            <a>Home</a>|
-            <a>Sobre</a>
+            <Link to="/">Home</Link>|
+            <Link to="/about">Sobre</Link>
         </nav>
     </header>
   )
